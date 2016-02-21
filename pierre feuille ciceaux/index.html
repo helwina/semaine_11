@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Pierre feuille ciseau en js</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Pierre feuille ciseau en javascript</h1>
+    </header>
+    <main>
+        <select name="Selected" id="Selected" onchange="selitem()">
+            <option value="3"></option>
+            <option value="0">pierre</option>
+            <option value="1">feuille</option>
+            <option value="2">ciseau</option>
+        </select>
+        <button id="button">GO</button>
+        <div id="result"></div>
+        <div id="error" class="error"></div>
+        <div id="win"></div>
+        <div id="loose"></div>
+        <div id="drow"></div>
+        <div id="pcnvic"></div>
+
+    </main>
+    <script src="javascript/app.js"></script>
+</body>
+</html>

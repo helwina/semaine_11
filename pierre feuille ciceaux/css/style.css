@@ -1,0 +1,23 @@
+h1 {
+    line-height:135px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+header {
+    height: 135px;
+}
+
+main {
+    text-align: center;
+}
+
+div {
+    margin: 20px;
+}
+
+.error {
+    color: red;
+    text-transform: uppercase;
+    font-size: 25px;
+}
