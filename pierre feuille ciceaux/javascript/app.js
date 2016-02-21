@@ -78,7 +78,7 @@ function verification(){
 
 function timer(){
     setTimeout(function(){
-        $result.innerHTML = ''
+        $result.innerHTML = '';
         $error.innerHTML = ''
     },3000);
     $select.selectedIndex = 0;
