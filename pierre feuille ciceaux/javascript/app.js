@@ -73,8 +73,7 @@ function verification(){
 }
 
 /*--------------------------------------------*\
-    affichage du message victoire match nul
-     defaite pendant 3 sec et reset la selection
+    affichage message et reset de la selection
 \*--------------------------------------------*/
 
 function timer(){
