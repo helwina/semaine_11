@@ -23,9 +23,10 @@ function selitem(){
     $nbrOrdi = Math.floor(Math.random() * 3);
 }
 
+//affiche le pourcentage de victoire
 function showvic(){
     victory = ((win * 100) / (win + loose + drow));
-    $pcnvic.innerHTML = victory.toFixed(3) + " % de victoire";
+    $pcnvic.innerHTML = Math.round(victory * 100) / 100 + " % de victoire";
 }
 
 //message d egaliter
@@ -55,12 +56,12 @@ function verification(){
         $result.innerHTML = "egaliter";
         timer();
         showdrow();
-    }else if(($valeur == 0 ) && ($nbrOrdi == 2) || ($valeur == 1) && ($nbrOrdi == 0) || ($valeur == 2) && ($nbrOrdi == 1)){
+    }else if((($valeur == 0 ) && ($nbrOrdi == 2)) || (($valeur == 1) && ($nbrOrdi == 0)) || (($valeur == 2) && ($nbrOrdi == 1))){
         win++;
         $result.innerHTML = "vous avez gagner";
         timer();
         showwin();
-    }else if(($valeur == 0) && ($nbrOrdi == 1) || (($valeur == 1) && ($nbrOrdi == 2)) || (($valeur = 2) && ($nbrOrdi == 0))) {
+    }else if((($valeur == 0) && ($nbrOrdi == 1)) || (($valeur == 1) && ($nbrOrdi == 2)) || (($valeur = 2) && ($nbrOrdi == 0))) {
         loose++;
         $result.innerHTML = "vous avez perdu";
         timer();
