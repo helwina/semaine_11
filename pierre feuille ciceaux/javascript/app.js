@@ -50,6 +50,7 @@ function showwin(){
         et incrementation des compteur
 \*--------------------------------------------*/
 
+//0 = pierre; 1 = feuille; 2 = ciseaux
 function verification(){
     if($valeur == $nbrOrdi){
         drow++;
